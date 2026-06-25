@@ -305,3 +305,10 @@ font-family : "Aladin";
 	align-item : center;
 	 justify-content: center;
 }
+.first-container-heading {
+    display: flex;
+    flex-direction: column;   /* Stacks the heading and paragraph text vertically */
+    align-items: center;       /* Centers everything horizontally */
+    text-align: center;        /* Ensures individual text lines are centered */
+    width: 100%;               /* Takes up full width to align perfectly */
+}
