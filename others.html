@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าอื่นๆ | MKC Hardware</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Pricing Page สำหรับ Neon Orange/Gold Gradient Dynamic Background */
+    .pricing-bg {
+      background-color: #11001c;
+      background-image: 
+        radial-gradient(at 0% 0%, #ff9e00 0px, transparent 45%),       /* Electric Amber */
+        radial-gradient(at 100% 0%, #ff0054 0px, transparent 50%),     /* Cyber Pink-Red */
+        radial-gradient(at 85% 75%, #9e0059 0px, transparent 55%),     /* Magenta Dark Shadow */
+        radial-gradient(at 40% 70%, #3c096c 0px, transparent 50%),     /* Deep Cyber Purple */
+        radial-gradient(at 100% 100%, #ff9e00 0px, transparent 40%);
+    }
+    .pricing-bg .line-waves path { stroke: rgba(255, 158, 0, 0.3) !important; filter: drop-shadow(0 0 8px rgba(255, 158, 0, 0.6)); }
+    .pricing-bg .nav-links a.active::after { background-color: #ff9e00; box-shadow: 0 0 10px #ff9e00; }
+    
+    /* Layout styling helper for properties */
+    .product-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+    .category-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+    .category-box h2 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #ff9e00;
+      border-bottom: 1px solid rgba(255, 158, 0, 0.2);
+      padding-bottom: 8px;
+    }
+    .product-item {
+      background: rgba(255, 255, 255, 0.02);
+      border-left: 3px solid #ff9e00;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      border-radius: 0 6px 6px 0;
+    }
+    .product-info h3 {
+      font-size: 1rem;
+      margin: 0 0 4px 0;
+      color: #ffffff;
+    }
+    .product-info p {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin: 0 0 6px 0;
+    }
+    .product-props {
+      font-size: 0.75rem;
+      color: #ff9e00;
+      background: rgba(255, 158, 0, 0.08);
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-overlay"></div>
+  <div class="hero-section pricing-bg">
+    <svg class="line-waves" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M500,700 C750,550 850,250 1440,550" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+      <path d="M470,720 C720,570 820,270 1410,570" stroke="rgba(255,255,255,0.18)" stroke-width="1.2" />
+      <path d="M-50,150 Q250,50 600,250" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    </svg>
+    
+    <header class="navbar">
+      <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="product.html">PRODUCTS</a>
+        <a href="others.html" class="active">OTHERS</a>
+        <a href="location.html">LOCATION</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+      <div class="search-box">
+        <span>🔍</span>
+        <input type="text" id="searchInput" placeholder="ค้นหาสินค้า...">
+      </div>
+    </header>
+
+    <main class="hero-content">
+      <h1>MKC<br>OTHERS PRODUCTS</h1>
+      <p class="subtitle">เครื่องมือช่าง อุปกรณ์ไฟฟ้า อุปกรณ์ประปา และอุปกรณ์เซฟตี้ครบวงจร</p>
+
+      <section class="product-section">
+
+        <div class="category-box">
+          <h2>🏗️ เครื่องมือปูนและงานก่อสร้าง</h2>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>เกรียงเหล็ก / เกรียงไม้ / เกรียงใบโพธิ์</h3>
+              <p>สำหรับงานก่ออิฐ ฉาบปูน ปาดคอนกรีตเรียบ และงานทำลวดลายผนัง</p>
+              <span class="product-props">คุณสมบัติ: เหล็กสปริงไม่เป็นสนิมง่าย / ไม้เนื้อแข็งขัดเรียบไม่กินปูน</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>ค้อนหงอนเหล็ก</h3>
+              <p>ใช้สำหรับตอกตะปูและถอนตะปูในงานโครงสร้างไม้และงานทั่วไป</p>
+              <span class="product-props">คุณสมบัติ: หัวค้อนเหล็กคาร์บอนสูง ด้ามจับไฟเบอร์หุ้มยางกันลื่น</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>ถังปูน / ตะแกรงร่อนทราย</h3>
+              <p>ถังผสมปูนหิ้วง่าย และตะแกรงคัดกรองขนาดทรายละเอียดทรายหยาบ</p>
+              <span class="product-props">คุณสมบัติ: พลาสติกไนลอนเหนียวพิเศษ ทนแรงกระแทก ไม่แตกหักง่าย</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>สายวัดระดับ / ระดับน้ำตากลม</h3>
+              <p>อุปกรณ์วัดระดับความสมดุลและความลาดเอียงของพื้นที่หน้างาน</p>
+              <span class="product-props">คุณสมบัติ: หลอดลูกดิ่งมองเห็นชัดเจน มีแม่เหล็กยึดเกาะโครงเหล็ก</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>ตลับเมตรมาตรฐาน</h3>
+              <p>เครื่องมือวัดระยะความยาวสากล มีหน่วยเซนติเมตรและนิ้วชัดเจน</p>
+              <span class="product-props">คุณสมบัติ: ขนาด 3ม. / 5ม. / 8ม. มีระบบล็อกอัตโนมัติ ได้มาตรฐาน ชั่ง ตวง วัด</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-box">
+          <h2>⚡ อุปกรณ์และเครื่องมือไฟฟ้า</h2>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>ไขควงวัดไฟ (เช็คแลมป์)</h3>
+              <p>สำหรับตรวจสอบกระแสไฟฟ้าตามเต้ารับหรือสายไฟเพื่อความปลอดภัย</p>
+              <span class="product-props">คุณสมบัติ: รองรับแรงดันไฟฟ้า 100V - 500V หลอดไฟนีออนสว่างชัดเจน</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>คีมปอกสายไฟ / คีมย้ำสาย</h3>
+              <p>ใช้ตัด ตัดแต่ง ปอกฉนวนหุ้มสายไฟ และย้ำหางปลาต่อสายไฟ</p>
+              <span class="product-props">คุณสมบัติ: ใบมีดคมกริบ ไม่ตัดโดนลวดทองแดงด้านใน มีสเกลบอกขนาดสาย</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>เทปพันสายไฟกันไฟรั่ว</h3>
+              <p>ใช้สำหรับพันรอยต่อของสายไฟฟ้าเพื่อความเป็นฉนวนและป้องกันไฟช็อต</p>
+              <span class="product-props">คุณสมบัติ: เนื้อเทป PVC เหนียว ไม่เหนียวเหนอะหนะ ทนแรงดันไฟฟ้าสูงสุด 600V</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>ดิจิทัลมัลติมิเตอร์</h3>
+              <p>เครื่องวัดค่าทางไฟฟ้าอเนกประสงค์ (แรงดันกระแส, ความต้านทาน)</p>
+              <span class="product-props">คุณสมบัติ: หน้าจอ LCD อ่านค่าง่าย มีระบบเสียงเตือนเมื่อสายไฟขาดจากกัน</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-box">
+          <h2>💧 อุปกรณ์และระบบประปา</h2>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>กรรไกรตัดท่อ PVC</h3>
+              <p>ใช้สำหรับตัดท่อพีวีซี ท่อพีอี ให้ขาดง่าย เรียบเนียน ไร้เศษขุยท่อ</p>
+              <span class="product-props">คุณสมบัติ: ใบมีดเหล็กกล้าไร้สนิม (Stainless Steel) ตัดท่อขนาดใหญ่สุด 42 มม.</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>ประแจเลื่อนอเนกประสงค์</h3>
+              <p>ใช้สำหรับขันหรือคลายน็อตเหลี่ยม หัวก๊อกน้ำ และข้อต่อประปาเหล็ก</p>
+              <span class="product-props">คุณสมบัติ: ปากประแจปรับขยายได้กว้าง ชุบโครเมียมป้องกันสนิมและการกัดกร่อน</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>น้ำยายาท่อ PVC (กาวทาท่อ)</h3>
+              <p>น้ำยาประสานท่อพีวีซีและข้อต่อท่อประปาให้ละลายติดแน่นเป็นเนื้อเดียวกัน</p>
+              <span class="product-props">คุณสมบัติ: ชนิดเข้มข้น แห้งไว สมานสนิท ทนแรงดันน้ำสูง ไม่รั่วซึม</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>ลวดสปริงทะลวงท่อ (งูดิน)</h3>
+              <p>อุปกรณ์แก้ไขท่อน้ำทิ้ง ส้วม หรืออ่างล้างจานอุดตันจากเศษสิ่งสกปรก</p>
+              <span class="product-props">คุณสมบัติ: ลวดสปริงเหล็กเหนียว ยืดหยุ่นสูง ซอกซอนตามส่วนโค้งงอของท่อได้ดี</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-box">
+          <h2>🧰 เครื่องมือช่างทั่วไปและอุปกรณ์เซฟตี้</h2>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>กล่องเก็บเครื่องมือช่าง</h3>
+              <p>กล่องจัดเก็บเครื่องมือแบบพกพา แยกชั้นใส่น็อต สกรู และเครื่องมือใหญ่</p>
+              <span class="product-props">คุณสมบัติ: โครงสร้างพลาสติก PP หนาพิเศษ ตัวล็อกเหล็กแข็งแรง รับน้ำหนักได้สูง</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>ถุงมือผ้าเคลือบยางกันบาด</h3>
+              <p>ถุงมือเซฟตี้สำหรับสวมใส่สกัดอิฐ ยกเหล็กเส้น หรือป้องกันสิ่งมีคม</p>
+              <span class="product-props">คุณสมบัติ: เนื้อผ้าใยแก้วถักเคลือบยางไนไตรบริเวณฝ่ามือ กันลื่นและกันน้ำมัน</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>แว่นตานิรภัยป้องกันเศษวัสดุ</h3>
+              <p>ป้องกันดวงตาจากสะเก็ดไฟงานเชื่อม เศษหินงานเจียร หรือฝุ่นละออง</p>
+              <span class="product-props">คุณสมบัติ: เลนส์ Polycarbonate เคลือบสารกันรอยขีดข่วนและกันฝ้า มาตรฐาน ANSI Z87.1</span>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <h3>น้ำยาหล่อลื่นเอนกประสงค์ (WD-40 / Sonax)</h3>
+              <p>สเปรย์ฉีดไล่ความชื้น หล่อลื่นจุดหมุนที่ฝืด และขจัดคราบสนิมฝังแน่น</p>
+              <span class="product-props">คุณสมบัติ: แทรกซึมได้รวดเร็ว ปลอดภัยต่อพื้นผิวพลาสติก ยาง และสีรถ</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

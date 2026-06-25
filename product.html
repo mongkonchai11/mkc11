@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด | MKC Hardware</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .product-bg {
+      background-color: #001219;
+      background-image:
+        radial-gradient(at 0% 0%, #00f5d4 0px, transparent 45%),
+        radial-gradient(at 100% 0%, #00bbf9 0px, transparent 50%),
+        radial-gradient(at 85% 75%, #9b5de5 0px, transparent 55%),
+        radial-gradient(at 40% 70%, #005f73 0px, transparent 50%),
+        radial-gradient(at 100% 100%, #00f5d4 0px, transparent 40%);
+    }
+    
+    /* สไตล์เพิ่มเติมสำหรับแยกหมวดหมู่และแสดงคุณสมบัติสินค้า */
+    .section-title {
+      font-size: 1.6rem;
+      color: #00f5d4;
+      margin: 40px 0 20px 0;
+      padding-bottom: 8px;
+      border-bottom: 2px solid rgba(0, 245, 212, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .product-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .product-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(10px);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .product-item:hover {
+      transform: translateY(-4px);
+      border-color: #00bbf9;
+    }
+    .product-image {
+      width: 100%;
+      height: 200px;
+      background: rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .product-info h2 {
+      font-size: 1.25rem;
+      margin: 0 0 10px 0;
+      color: #ffffff;
+    }
+    .product-info p {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0 0 6px 0;
+      line-height: 1.5;
+    }
+    .product-prop {
+      font-size: 0.8rem;
+      color: #00f5d4;
+      background: rgba(0, 245, 212, 0.08);
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin-top: auto;
+      border-left: 3px solid #00f5d4;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="hero-section product-bg">
+
+  <header class="navbar">
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="product.html" class="active">PRODUCTS</a>
+      <a href="others.html">OTHERS</a>
+      <a href="location.html">LOCATION</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </header>
+
+  <main class="hero-content">
+
+    <h1>MKC<br>PRODUCTS</h1>
+    <p class="subtitle">วัสดุก่อสร้าง โครงสร้างเหล็ก สีทาบ้าน และแผ่นบอร์ดตัวแทนจำหน่ายตรง</p>
+
+    <h2 class="section-title">🧱 ปูนซีเมนต์และกาวซีเมนต์ (Cement & Adhesive)</h2>
+    <section class="product-section">
+
+      <div class="product-item">
+        <div class="product-image"><img src="tpi.jpg" alt="TPI Cement"></div>
+        <div class="product-info">
+          <h2>ปูน TPI (ทีพีไอ)</h2>
+          <p><b>ถุงเขียว (TPI 199):</b> ปูนผสมสำเร็จสำหรับงานก่อ-ฉาบละเอียด เนื้อเนียนลื่น เหนียวเกาะผนังดี ไม่แตกร้าว</p>
+          <p><b>ถุงแดง (TPI 299):</b> ปูนปอร์ตแลนด์ประเภท 1 สำหรับงานโครงสร้าง เสา คาน และงานหล่อคอนกรีตที่ต้องการกำลังอัดสูง</p>
+          <div class="product-prop">สเปก: ได้รับมาตรฐาน มอก. 80-2550 / มอก. 15 เล่ม 1-2555</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="20150328-cement-tiger-mortar.jpg" alt="Tiger Cement"></div>
+        <div class="product-info">
+          <h2>ปูนเสือ (Tiger Cement)</h2>
+          <p>ปูนซีเมนต์ผสมยอดนิยมสำหรับงานก่ออิฐ ฉาบผนัง และเทปรับพื้นสูตรพิเศษ ตัวเนื้อปูนอุ้มน้ำได้ดี ลดปัญหาการซึมและแห้งตัวเร็วเกินไป ทนสภาพอากาศเมืองร้อน</p>
+          <div class="product-prop">สเปก: สูตรซิลิก้าโมเลกุลเล็ก ฉาบเรียบเนียน ไม่เกิดรอยร้าวลายงา</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="images.jpg" alt="Quick Coat"></div>
+        <div class="product-info">
+          <h2>ปูนลูกดิ่ง (Quick Coat)</h2>
+          <p><b>ถุงแดง:</b> ปูนฉาบอิฐมวลเบาโดยเฉพาะ ยึดเกาะแน่น</p>
+          <p><b>ถุงม่วง:</b> ปูนก่ออิฐมวลเบา 2in1 สมานสนิทแห้งไว</p>
+          <p><b>ถุงเหลือง:</b> สกิมโค้ท (Skim Coat) ปูนฉาบแต่งผิวบางพิเศษแก้งานผนังเป็นคลื่น</p>
+          <div class="product-prop">สเปก: ความหนาการฉาบผิวบางเลือกได้ตั้งแต่ 0.3 - 3 มม. ผิวเรียบเนียนระดับพรีเมียม</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="images (1).jpg" alt="Crocodile Glue"></div>
+        <div class="product-info">
+          <h2>กาวซีเมนต์จระเข้ (Crocodile Tile Adhesive)</h2>
+          <p>กาวซีเมนต์สำหรับปูกระเบื้องแกรนิตโต้ กระเบื้องเซรามิกขนาดใหญ่ และปูสระว่ายน้ำ แรงยึดเกาะสูง ปรับแต่งแนวร่องกระเบื้องได้ง่าย แห้งตัวสม่ำเสมอ ป้องกันกระเบื้องหลุดล่อนหรือระเบิด</p>
+          <div class="product-prop">สเปก: มาตรฐานอเมริกา ANSI A108.5 / ยึดเกาะแน่นยาวนานกว่าปูนผสมทั่วไป 5 เท่า</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="พรีเมี่ยม-พลัส-เงิน.jpg" alt="Tile Grout"></div>
+        <div class="product-info">
+          <h2>กาวยาแนวจระเข้ (Tile Grout)</h2>
+          <p>ยาแนวร่องกระเบื้องสูตรกันน้ำซึมลึก ไม่หดตัว ไม่หลุดล่อน ผสมสารไมโครแบน (Microban) ยับยั้งการเกิดเชื้อราดำ แบคทีเรีย และตะไคร่น้ำ เหมาะสำหรับห้องน้ำและห้องครัว</p>
+          <div class="product-prop">สเปก: สำหรับร่องกระเบื้องกว้าง 1-7 มม. ปลอดภัยต่อสุขภาพมาตรฐานสูงสุด</div>
+        </div>
+      </div>
+
+    </section>
+
+    <h2 class="section-title">🏗️ เหล็กโครงสร้างและเหล็กรูปพรรณ (Structural Steel)</h2>
+    <section class="product-section">
+
+      <div class="product-item">
+        <div class="product-image"><img src="squaresteelbox.jpg" alt="Steel Box"></div>
+        <div class="product-info">
+          <h2>เหล็กกล่องเหลี่ยม / แป๊บโปร่ง (Steel Box)</h2>
+          <p>เหล็กรูปพรรณหน้าตัดสี่เหลี่ยมจัตุรัส ผิวเรียบ มุมฉากคม ความหนาเต็ม มิลลิเมตร เหมาะสำหรับงานโครงหลังคา งานทำแป และงานเหล็กตกแต่งอาคารทั่วไป</p>
+          <div class="product-prop">สเปก: ได้รับมาตรฐาน มอก. 107-2561 ชั้นคุณภาพความแข็งแรงสูง</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="images (2).jpg" alt="Steel Pipe"></div>
+        <div class="product-info">
+          <h2>เหล็กกล่องแบน / แป๊บแบน (Rectangular Steel)</h2>
+          <p>เหล็กหน้าตัดสี่เหลี่ยมผืนผ้า นิยมใช้ในงานโครงสร้างเบา เช่น โครงสร้างเฟอร์นิเจอร์ งานทำรั้ว ราวบันได และงานต่อเติมทั่วไป ดัดโค้งตัดแต่งง่าย</p>
+          <div class="product-prop">สเปก: ความยาวมาตรฐาน 6 เมตร / ผิวเนียนเรียบไม่มีรอยแตกแยกตามตะเข็บ</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="เหล็กฉากชุบกัลวาไนซ์ HDG.png" alt="Angle Steel"></div>
+        <div class="product-info">
+          <h2>เหล็กฉากชุบกัลวาไนซ์ (Angle Steel HDG)</h2>
+          <p>เหล็กฉากโครงสร้างทำมุม 90 องศา ผ่านการชุบสังกะสีแบบจุ่มร้อน (Hot-Dip Galvanized) ป้องกันการเกิดสนิมได้อย่างสมบูรณ์แบบ ทนแดด ทนฝน และไอเค็มทะเล</p>
+          <div class="product-prop">สเปก: อัตราการเคลือบสังกะสีหนาพิเศษ เหมาะสำหรับงานโครงสร้างภายนอกอาคาร</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="images (3).jpg" alt="Flat Steel"></div>
+        <div class="product-info">
+          <h2>เหล็กแบน / เหล็กพับ (Flat Bars)</h2>
+          <p>เหล็กแผ่นรีดแบนยาว เนื้อเหนียวแน่น เหมาะสำหรับงานเชื่อมยึดเหล็ก งานตัดพับเชื่อมโครงสร้างรองรับรางน้ำฝน งานเหล็กดัดหน้าต่างกันขโมย และงานฝาตะแกรง</p>
+          <div class="product-prop">สเปก: มาตรฐาน มอก. 1222-2560 รองรับแรงดึงและแรงดัดงอดีเยี่ยม</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="images (4).jpg" alt="Deformed Bar"></div>
+        <div class="product-info">
+          <h2>เหล็กข้ออ้อย (Deformed Bars)</h2>
+          <p>เหล็กเส้นกลมผิวมีบั้งงอสำหรับใช้ในงานเสริมแรงคอนกรีต ช่วยเพิ่มแรงยึดเกาะระหว่างเนื้อเหล็กและเนื้อคอนกรีต เหมาะสำหรับโครงสร้างใหญ่ เช่น เสา คาน และพื้นตึก</p>
+          <div class="product-prop">สเปก: มาตรฐาน มอก. 24-2559 ชั้นคุณภาพ SD40 และ SD50 แข็งแกร่งสูงสุด</div>
+        </div>
+      </div>
+
+    </section>
+
+    <h2 class="section-title">🎨 สีทาอาคารและสีเคมีภัณฑ์ (Paints & Coatings)</h2>
+    <section class="product-section">
+
+      <div class="product-item">
+        <div class="product-image"><img src="toa.jpg" alt="TOA Paint"></div>
+        <div class="product-info">
+          <h2>สี TOA (ทีโอเอ)</h2>
+          <p>สีน้ำอะคริลิกเกรดพรีเมียม (4 Seasons / Shield 1) สำหรับทาภายนอกและภายในอาคาร ฟิล์มสียึดเกาะแน่น ไม่ลอกล่อน กันเชื้อรา ตะไคร่น้ำ และเช็ดล้างทำความสะอาดง่าย</p>
+          <div class="product-prop">สเปก: เทคโนโลยีสะท้อนความร้อนจากรังสี UV เกิน 95% ปลอดสารปรอทและตะกั่ว</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="kobe.jpg" alt="Kobe Spray"></div>
+        <div class="product-info">
+          <h2>สีสเปรย์ KOBE (โกเบ)</h2>
+          <p>สีสเปรย์อเนกประสงค์ แห้งเร็ว ฟิล์มสีมีความเงางามสูง ยึดเกาะได้ดีกับทุกพื้นผิว เช่น ไม้ เหล็ก พลาสติก และคอนกรีต เหมาะสำหรับงานพ่นซ่อมแซมและงานตกแต่ง DIY</p>
+          <div class="product-prop">สเปก: หัวฉีดมาตรฐานกระจายละอองสีสม่ำเสมอ ไม่เยิ้มง่าย</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="bager.jpg" alt="Beger Cool"></div>
+        <div class="product-info">
+          <h2>สีเบเยอร์คูล (Beger Cool)</h2>
+          <p>สีน้ำทาอาคารนวัตกรรมบ้านเย็น ผสมสารไมโครสเฟียร์เซรามิกทำหน้าที่เป็นฉนวนสะท้อนความร้อน ช่วยลดอุณหภูมิภายในตัวบ้าน ประหยัดค่าไฟและทนต่อสภาพอากาศแปรปรวน</p>
+          <div class="product-prop">สเปก: ได้รับการรับรองมาตรฐานประหยัดไฟเบอร์ 5 และมาตรฐาน มอก. ลดความร้อน</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="homecote.jpg" alt="Homecote"></div>
+        <div class="product-info">
+          <h2>สีโฮมโค้ท (Homecote by TOA)</h2>
+          <p>สีน้ำอะคริลิกราคาประหยัดคุ้มค่า ให้เนื้อสีแน่น ทาได้พื้นที่มาก กลบมิดพื้นผิวผนังปูนได้ดี เหมาะสำหรับงานทารองพื้น งานบ้านเช่า หรือโครงการที่ต้องการควบคุมต้นทุน</p>
+          <div class="product-prop">สเปก: กลิ่นอ่อน ปลอดภัยต่อผู้อยู่อาศัย ไม่ผสมสารละลายเคมีอันตราย</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="sefco.jpg" alt="SEFCO Paint"></div>
+        <div class="product-info">
+          <h2>สีเคลือบเงา SEFCO (เซฟโก้)</h2>
+          <p>สีน้ำมันเคลือบเงาคุณภาพสูงและสีรองพื้นกันสนิม ให้ฟิล์มสีหนาเรียบเนียนดุจกระจก ปกป้องพื้นผิวเหล็กและโครงไม้จากความชื้นและการเกิดสนิมได้อย่างยาวนาน</p>
+          <div class="product-prop">สเปก: ทนทานต่อการขูดขีดและการเช็ดล้างด้วยน้ำยาเคมีทำความสะอาดทั่วไป</div>
+        </div>
+      </div>
+
+    </section>
+
+    <h2 class="section-title">⚡ อุปกรณ์ไฟฟ้า ประปา และสุขภัณฑ์ (Electric, Pipes & Bathroom)</h2>
+    <section class="product-section">
+
+      <div class="product-item">
+        <div class="product-image"><img src="pipe.jpg" alt="PVC Pipes"></div>
+        <div class="product-info">
+          <h2>ท่อ PVC และท่อระบบน้ำ (Pipes)</h2>
+          <p><b>สีฟ้า:</b> ท่อประปารองรับแรงดันน้ำสูง (ชั้น 8.5 และ 13.5) สำหรับระบบน้ำดีในบ้าน</p>
+          <p><b>สีเหลือง/ขาว:</b> สำหรับร้อยสายไฟและสายโทรศัพท์ ปลอดภัย ไม่ลามไฟ</p>
+          <p><b>สีเทา:</b> สำหรับระบบระบายน้ำทิ้ง สิ่งปฏิกูล และระบายอากาศ</p>
+          <div class="product-prop">สเปก: เนื้อเหนียวพิเศษ ทนต่อแรงกระแทกและกรดด่างตามมาตรฐาน มอก.</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="wire.jpg" alt="Electrical Wires"></div>
+        <div class="product-info">
+          <h2>สายไฟมาตรฐาน (Electrical Wires)</h2>
+          <p><b>VAF (สายขาวแบน):</b> สำหรับเดินลอยเกาะผนังภายในอาคารทั่วไป แกนคู่ทองแดงเต็มมิล</p>
+          <p><b>VCT (สายกลมดำ):</b> สายไฟฉนวนหนาสองชั้น มีความยืดหยุ่นสูง ใช้ภายนอกอาคารได้ดี</p>
+          <p><b>THW (สายแกนเดี่ยว):</b> สำหรับงานเดินร้อยท่อเหล็กหรือท่อ PVC ในระบบตู้คอนโทรล</p>
+          <div class="product-prop">สเปก: ผลิตจากทองแดงบริสุทธิ์ 100% ปลอดภัยได้รับมาตรฐาน มอก. 11 เล่ม 3-2553</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="eve.jpg" alt="EVE Lamp"></div>
+        <div class="product-info">
+          <h2>หลอดไฟ EVE (อีฟ ไลท์ติ้ง)</h2>
+          <p>หลอดไฟประหยัดพลังงาน LED คุณภาพสูง มีให้เลือกทั้งแบบทรงกลม (Bulb) และแบบหลอดยาว (Tube) ให้ค่าความสว่างสูงแต่กินไฟน้อย ไม่แผ่รังสีความร้อน เปิดติดทันทีแสงไม่กระพริบ</p>
+          <div class="product-prop">สเปก: อายุการใช้งานยาวนานกว่า 15,000 ชั่วโมง ได้มาตรฐานประหยัดไฟเบอร์ 5</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="philip.jpg" alt="Philips Lamp"></div>
+        <div class="product-info">
+          <h2>หลอดไฟ Philips (ฟิลิปส์)</h2>
+          <p>แบรนด์หลอดไฟระดับโลกพร้อมเทคโนโลยีถนอมสายตา (EyeComfort) แสงสว่างนิ่งนุ่มนวล กระจายทั่วถึงอย่างสม่ำเสมอ ช่วยลดความอ่อนล้าของดวงตา มีให้เลือกหลากเฉดสี (Daylight / Warm White)</p>
+          <div class="product-prop">สเปก: ปราศจากรังสี UV/IR ปลอดภัยสูงสุดสำหรับบ้านพักอาศัยและสำนักงาน</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="amazon.jpg" alt="Amazon Bathroom"></div>
+        <div class="product-info">
+          <h2>อุปกรณ์สุขภัณฑ์ Amazon (อเมซอน)</h2>
+          <p>ชุดอุปกรณ์ห้องน้ำ สายฉีดชำระ หัวฝักบัว และก๊อกน้ำคุณภาพสูง ผลิตจากวัสดุแกนทองเหลืองและสแตนเลสชุบโครเมียมหนาพิเศษ ผิวเงางาม ทนทานต่อการกัดกร่อนจากน้ำยาห้องน้ำ กลไกเปิด-ปิดนุ่มนวล</p>
+          <div class="product-prop">สเปก: ระบบวาล์วเซรามิกแท้ (Ceramic Valve) รับประกันน้ำไม่รั่วซึมตลอดการใช้งาน</div>
+        </div>
+      </div>
+
+    </section>
+
+    <h2 class="section-title">🪵 แผ่นบอร์ดและไม้สังเคราะห์ (Boards & Wood Panels)</h2>
+    <section class="product-section">
+
+      <div class="product-item">
+        <div class="product-image"><img src="plywood.jpg" alt="Plywood"></div>
+        <div class="product-info">
+          <h2>ไม้อัดเคลือบฟิล์ม / ไม้อัดโครงสร้าง (Plywood)</h2>
+          <p>ไม้อัดสำหรับงานเฟอร์นิเจอร์บิวต์อิน และไม้อัดเคลือบฟิล์มดำสำหรับเป็นแบบเทคอนกรีต อัดด้วยกาวกันน้ำ ทนทานต่อการใช้งานซ้ำหลายครั้ง ไม่บวมแยกชั้น</p>
+          <div class="product-prop">สเปก: มีความหนาให้เลือกตั้งแต่ 4 มม. ถึง 20 มม. หน้าไม้อัดแน่นเรียบตึง</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="diamond.png" alt="Fiber Cement Wood"></div>
+        <div class="product-info">
+          <h2>ไม้ฝา / ไม้ระแนง ไฟเบอร์ซีเมนต์ (ตราเพชร)</h2>
+          <p>ไม้สังเคราะห์ผลิตจากปูนซีเมนต์ปอร์ตแลนด์ผสมเส้นใยเซลลูโลส ปลอดภัยจากปลวกและมอด 100% ไม่บิดงอ ไม่หดตัว ทนน้ำทนชื้นสูง เหมาะสำหรับงานฝาผนังและงานระแนงระบายอากาศ</p>
+          <div class="product-prop">สเปก: ลายไม้ธรรมชาติลึกคมชัด ทนแรงกระแทกตามมาตรฐานสากล</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="viva.jpg" alt="Viva Board"></div>
+        <div class="product-info">
+          <h2>วีว่าบอร์ด (Viva Board)</h2>
+          <p>แผ่นซีเมนต์บอร์ดสลับชิ้นไม้ ผสมผสานความยืดหยุ่นของไม้และความแข็งแกร่งของปูนซีเมนต์เข้าด้วยกัน ใช้ทำผนังห้องกั้นเสียง ผนังภายนอกอาคาร หรือแผ่นปูรองพื้นรับน้ำหนัก</p>
+          <div class="product-prop">สเปก: ผิวหน้าเรียบเนียนสีเทาคอนกรีต ป้องกันไฟลามยาวนานกว่า 2 ชั่วโมง</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="flatboard.jpg" alt="Smart Board"></div>
+        <div class="product-info">
+          <h2>สมาร์ทบอร์ด (Smart Board)</h2>
+          <p>แผ่นไฟเบอร์ซีเมนต์บอร์ดโครงสร้างเหนียวพิเศษ ปราศจากแร่ใยหิน ดัดโค้งได้ง่าย กันน้ำ กันความชื้น ทนต่อปลวกเจาะกิน เหมาะสำหรับงานผนังเบาทั้งภายในและภายนอก</p>
+          <div class="product-prop">สเปก: เทคโนโลยีขอบลาด (Tapered Edge) ช่วยให้ฉาบเก็บรอยต่อได้เรียบสนิท</div>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <div class="product-image"><img src="gupsum.jpg" alt="Gypsum Board"></div>
+        <div class="product-info">
+          <h2>แผ่นยิปซั่มบอร์ด (Gypsum Board)</h2>
+          <p>แผ่นฝ้าเพดานและผนังภายใน เนื้อยิปซั่มบริสุทธิ์หุ้มด้วยกระดาษเหนียวพิเศษ น้ำหนักเบา ติดตั้งและตัดแต่งรูปทรงได้ง่าย ผิวหน้าเรียบเนียนสนิท กันความร้อนและกันไฟลาม</p>
+          <div class="product-prop">สเปก: มีทั้งสูตรมาตรฐาน, สูตรทนความชื้น (สำหรับห้องน้ำ), และสูตรฟอยล์กันความร้อน / เงื่อนไขหน้าร้าน: จำหน่ายรูปแบบแพ็คคู่</div>
+        </div>
+      </div>
+
+    </section>
+
+    <h2 class="section-title">🛠️ อุปกรณ์ฮาร์ดแวร์และเครื่องมือช่าง (Hardware & Tools)</h2>
+    <section class="product-section">
+
+      <div class="product-item">
+        <div class="product-image"><img src="Screenshot 2026-06-04 131412.png" alt="SOLO Tools"></div>
+        <div class="product-info">
+          <h2>เครื่องมือช่างและกุญแจ SOLO (โซโล)</h2>
+          <p>กุญแจคล้อง แม่กุญแจเหล็กกล้า คีม ไขควง และเครื่องมือช่างมาตรฐานสากล ระบบกลไกล็อกหนาแน่นแบบ Double Lock ป้องกันการตัด เลื่อย หรือการงัดแงะโจรกรรมได้อย่างดีเยี่ยม</p>
+          <div class="product-prop">สเปก: ผลิตจากเหล็กโครมวานาเดียม (CR-V) แข็งแรงพิเศษ ไม่บิ่นหักง่าย ทนงานหนัก</div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

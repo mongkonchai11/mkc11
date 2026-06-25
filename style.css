@@ -1,0 +1,493 @@
+/* Container Layout with Cyberpunk Mesh Colors */
+.hero-section {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #ffffff; /* 🌟 ဤနေရာတွင် စာလုံးအရောင်အားလုံးကို အဖြူရောင် ပြောင်းလိုက်ပါသည် */
+  
+  /* Cyber Space နောက်ခံ အမည်းရောင် */
+  background-color: #03001e; 
+  
+  /* နီယွန်ရောင်စုံ Mesh Gradient */
+  background-image: 
+    radial-gradient(at 0% 0%, #00f2fe 0px, transparent 45%),       
+    radial-gradient(at 100% 0%, #7300ff 0px, transparent 50%),     
+    radial-gradient(at 85% 75%, #ff007f 0px, transparent 55%),     
+    radial-gradient(at 40% 70%, #4e006e 0px, transparent 50%),     
+    radial-gradient(at 100% 100%, #00f2fe 0px, transparent 40%);   
+  background-size: 100% 100%;
+}
+
+/* 🌟 လိုင်းကွေး SVG ကို Absolute ဖြင့် သေသပ်စွာ နေရာချခြင်း (Content များကို မတွန်းတော့ပါ) */
+.line-waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.line-waves path {
+  stroke: rgba(0, 242, 254, 0.3) !important;
+  filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.6));
+}
+
+/* Header & Navbar Alignment */
+.navbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-right: 35px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: #ff007f;
+  box-shadow: 0 0 10px #ff007f;
+  transition: width 0.3s ease;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a.active, .nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Search Box Styling */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 242, 254, 0.6);
+  box-shadow: 0 0 8px rgba(0, 242, 254, 0.2);
+  padding: 6px 15px;
+  width: 240px;
+}
+
+.search-icon {
+  color: #00f2fe;
+  font-size: 0.8rem;
+  margin-right: 8px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  outline: none;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* 🌟 Main Content ကို ဗဟို၌ လှပစွာ နေရာချခြင်း */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 80px;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: #ffffff;
+}
+
+.hero-content .subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Button Styling */
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.btn-filled {
+  background-color: #ff007f;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(255, 0, 127, 0.4);
+}
+
+.btn-filled:hover {
+  background-color: #e60072;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid #00f2fe;
+  color: #00f2fe;
+}
+
+.btn-outline:hover {
+  background: rgba(0, 242, 254, 0.1);
+}
+
+/* Decorative Elements */
+.right-menu-strip {
+  position: absolute;
+  right: 40px;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 2;
+}
+
+.right-menu-strip span {
+  width: 24px;
+  height: 2px;
+  background-color: rgba(0, 242, 254, 0.8);
+}
+
+.bottom-right-dots {
+  position: absolute;
+  right: 40px;
+  bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  z-index: 2;
+}
+
+.bottom-right-dots .dot {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 0, 127, 0.9);
+  border-radius: 50%;
+}
+
+/* မူလ link အားလုံးတွင် အောက်လိုင်းကို ကြိုတင်ပြင်ဆင်ထားသော်လည်း ဖျောက်ထားမည် */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0; /* ပထမတွင် အောက်လိုင်းမရှိစေရန် */
+  height: 1.5px;
+  background-color: #ffffff;
+  transition: width 0.3s ease; /* မျဉ်းကြောင်းလေး ပေါ်လာချိန်တွင် ချောမွေ့စေရန် */
+}
+
+/* active ဖြစ်နေသော link တွင်မှ မျဉ်းကြောင်းအပြည့် ပေါ်လာစေမည် */
+.nav-links a.active::after {
+  width: 100%; /* စာလုံးအောက် ကွက်တိအလျားအပြည့် */
+}
+
+/* 🌟 Page Transition Overlay Effect */
+.page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #03001e; /* သင့် Cyber Base Color အတိုင်း ထားပါ */
+  z-index: 9999; /* အပေါ်ဆုံးက ဖုံးထားရန် */
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* ၀.၅ စက္ကန့်အတွင်း ချောမွေ့စွာ အလုပ်လုပ်မည် */
+}
+
+/* စာမျက်နှာပွင့်သွားချိန်တွင် သုံးမည့် Class */
+.page-overlay.fade-in-active {
+  opacity: 0;
+}
+
+/* Shop Container Grid */
+.shop-grid {
+  display: flex;
+  gap: 25px;
+  margin-top: 35px;
+  width: 100%;
+}
+
+/* Cyber Industrial Card Structure */
+.shop-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05); /* မှန်သားကဲ့သို့ ကြည်လင်သောနောက်ခံ */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* Glassmorphism Blur */
+  padding: 30px 25px;
+  border-radius: 16px;
+  flex: 1;
+  min-width: 280px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 242, 254, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 242, 254, 0.15);
+}
+
+/* Card Elements */
+.card-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: rgba(0, 242, 254, 0.2);
+  color: #00f2fe;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 242, 254, 0.3);
+}
+
+.shop-card h3 {
+  font-size: 1.3rem;
+  margin: 0 0 12px 0;
+  color: #ffffff;
+}
+
+.shop-card p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 25px;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.price .unit {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Shop Button Style */
+.btn-shop {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shop-card:hover .btn-shop {
+  background: #ffffff;
+  color: #03001e;
+  border-color: #ffffff;
+}
+
+/* Specific details for blog and help links */
+.help-link {
+  color: #00f2fe;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.help-link:hover {
+  text-decoration: underline;
+}
+.date {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  display: block;
+  margin-bottom: 5px;
+}
+.product-section{
+  width:100%;
+  margin-top:40px;
+}
+
+.product-item{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  margin-bottom:40px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  border-radius:15px;
+  padding:20px;
+}
+
+.product-image img{
+  width:250px;
+  border-radius:12px;
+}
+
+.product-info{
+  flex:1;
+}
+
+.product-info h2{
+  margin-bottom:15px;
+  color:#fff;
+}
+
+.product-info p{
+  color:rgba(255,255,255,.85);
+  line-height:1.7;
+}
+
+
+/* ==========================================================================
+   --- 2. တက်ဘလက်များအတွက် (TABLET VIEW: Screens under 1024px) ---
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 30px 40px;
+  }
+  
+  .hero-content {
+    padding: 0 40px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem; /* စာလုံးအရွယ်အစား အနည်းငယ်သေးလိုက်ပါမည် */
+  }
+
+  /* Tablet layout handling for shop cards grid */
+  .shop-grid {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+
+/* ==========================================================================
+   --- 3. ဖုန်းမျက်နှာပြင်များအတွက် (PHONE VIEW: Screens under 768px) ---
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Navbar ကို အပေါ်အောက် အစီအစဉ်ပြောင်းလဲမည် */
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap; /* နေရာမဆန့်ပါက အောက်လိုင်းဆင်းပေးရန် */
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    margin-right: 0;
+    font-size: 0.7rem;
+  }
+  
+  .search-box {
+    width: 100%; /* ဖုန်းပေါ်တွင် Search Bar ကို အပြည့်ချဲ့မည် */
+    box-sizing: border-box;
+  }
+
+  /* Main Content ကို အလယ်ဗဟိုသို့ ပို့ပေးမည် */
+  .hero-content {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem; /* ဖုန်းနှင့်ဆန့်အောင် စာလုံးထပ်သေးပါမည် */
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+    flex-direction: column; /* ခလုတ်များကို အပေါ်အောက် စီပေးမည် */
+    gap: 10px;
+  }
+  
+  .btn {
+    width: 100%; /* ခလုတ်များကို ဘယ်ညာအပြည့် ဆွဲဆန့်မည် */
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* ဖုန်းမျက်နှာပြင်တွင် ရှုပ်ပွမနေစေရန် ဘေးက အစက်နှင့် လိုင်းတိုများကို ဖျောက်ထားမည် */
+  .right-menu-strip, 
+  .bottom-right-dots {
+    display: none;
+  }
+
+  /* 📱 PHONE VIEW ADDITIONS FOR NEW SECTIONS: */
+  
+  /* Shop Grid Phone Layout */
+  .shop-grid {
+    flex-direction: column; /* ကတ်များကို ဒေါင်လိုက်တစ်ခုချင်းစီစီမည် */
+    gap: 20px;
+  }
+  
+  .shop-card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  /* Product Items Phone Layout */
+  .product-item {
+    flex-direction: column; /* ဓါတ်ပုံနှင့် စာသားကို အပေါ်အောက်ပုံစံပြောင်းမည် */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .product-image img {
+    width: 100%;
+    max-width: 350px; /* ဖုန်းမျက်နှာပြင်အကျယ်အတိုင်းပုံကိုညှိမည် */
+  }
+}
