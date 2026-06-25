@@ -302,4 +302,6 @@ body {
 	color: rgba(51, 255, 0, 0);
 font-family : "Aladin";
 -webkit-text-stroke: White 1px;
+	align-item : center;
+	 justify-content: center;
 }
